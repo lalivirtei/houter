@@ -1,9 +1,16 @@
 .menu {
-  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
   display: flex;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  transition: all cubic-bezier(.79,.58,.62,-0.81) .5s;
 
   &__content {
-    display: none;
+    position: relative;
+    display: flex;
     padding: 15px 30px;
     width: 100%;
     flex-direction: column;
@@ -15,7 +22,7 @@
 
     @media (min-width: $screen-md) {
       padding: 5px;
-      display: flex;
+      right: 0;
       background: none;
       align-items: flex-end;
       justify-content: flex-start;
@@ -53,19 +60,21 @@
   }
 
   &__button {
+    -webkit-tap-highlight-color: transparent;
     position: fixed;
+    top: 15px;
+    right: 15px;
     z-index: 10;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    top: 15px;
-    right: 15px;
     background: var(--logo-green);
     border: 2px solid white;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    cursor: pointer;
 
     &::before, &::after {
       content: '';
@@ -118,17 +127,8 @@
     background: transparent;
   }
 
-  &--open &__content {
-    display: flex;
-  }
-
   &--open {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
 
     .menu__button {
 
@@ -144,8 +144,9 @@
     }
   }
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-md) {
     position: relative;
     z-index: 1;
+    height: unset;
   }
 }
