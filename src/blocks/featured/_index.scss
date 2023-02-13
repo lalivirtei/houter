@@ -104,6 +104,7 @@
 
     &:hover {
       background: var(--green-100);
+
       .featured__arrow-icon {
         fill: var(--neutral-700);
       }
@@ -186,10 +187,10 @@
     margin-left: 10px;
   }
 
-  &__list {
+  &__ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    list-style-type: none;
   }
 
   &__item {

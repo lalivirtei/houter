@@ -7,15 +7,15 @@ section.featured#featured
                 button.btn.featured__btn.featured__btn--active(data-type="house")
                     svg.featured__btn-icon
                         use(href="img/sprite.svg#featured__house")
-                    .featured__btn-text House
+                    span.featured__btn-text House
                 button.btn.featured__btn(data-type="villa")
                     svg.featured__btn-icon
                         use(href="img/sprite.svg#featured__villa")
-                    .featured__btn-text Villa
+                    span.featured__btn-text Villa
                 button.btn.featured__btn(data-type="apartment")
                     svg.featured__btn-icon
                         use(href="img/sprite.svg#featured__apartment")
-                    .featured__btn-text Apartment
+                    span.featured__btn-text Apartment
             .featured__arrows
                 button.btn.featured__arrow
                     svg.featured__arrow-icon
@@ -23,8 +23,8 @@ section.featured#featured
                 button.btn.featured__arrow.featured__arrow--active
                     svg.featured__arrow-icon
                         use(href="img/sprite.svg#search__arrow--symbol")
-    ul.featured__list.swiper
-        .swiper-wrapper
+    .swiper.featured__list
+        ul.swiper-wrapper.featured__ul
             each item in features
                 li.featured__item.swiper-slide(data-type=item.type)
                     figure.featured__figure
