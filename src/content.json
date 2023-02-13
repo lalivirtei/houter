@@ -1,0 +1,137 @@
+{
+  "features": [
+    {
+      "img": "house-2.jpg",
+      "tag": "popular",
+      "type": "house",
+      "name": "Roselands house",
+      "price": "35.000.000",
+      "owner": {
+        "avatar": "ava-3.jpg",
+        "name": "Dianne Russell",
+        "location": "Manchester, Kentucky"
+      }
+    },
+    {
+      "img": "house-3.jpg",
+      "tag": "new",
+      "type": "house villa",
+      "name": "Woodlandside",
+      "price": "20.000.000",
+      "owner": {
+        "avatar": "ava-5.jpg",
+        "name": "Robert Fox",
+        "location": "Dr. San Jose, South Dakota"
+      }
+    },
+    {
+      "img": "house-4.jpg",
+      "tag": "best",
+      "type": "house apartment",
+      "name": "The Old Lighthouse",
+      "price": "44.000.000",
+      "owner": {
+        "avatar": "ava-6.jpg",
+        "name": "Ronald Richards",
+        "location": "Santa Ana, Illinois"
+      }
+    },
+    {
+      "img": "house-5.jpg",
+      "tag": "popular",
+      "type": "house",
+      "name": "Cosmo's House",
+      "price": "22.000.000",
+      "owner": {
+        "avatar": "ava-7.jpg",
+        "name": "Jenny Wilson",
+        "location": "Preston Rd. Inglewood, Maine 98380"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "img": "house-7.jpg",
+      "title": "My house sold out fast!",
+      "text": "I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!",
+      "rate": 4.3,
+      "person": {
+        "avatar": "ava-8.jpg",
+        "name": "Courtney Henry",
+        "post": "CEO Andarafish"
+      }
+    },
+    {
+      "img": "house-8.jpg",
+      "title": "Best! I got the house I wanted through Hounter",
+      "text": "Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.",
+      "rate": 4.6,
+      "person": {
+        "avatar": "ava-3.jpg",
+        "name": "Dianne Russell",
+        "post": "Manager Director"
+      }
+    },
+    {
+      "img": "house-9.jpg",
+      "title": "Through the Hounter, I can get a house for my self",
+      "text": "By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!",
+      "rate": 4.3,
+      "person": {
+        "avatar": "ava-1.jpg",
+        "name": "Esther Howard",
+        "post": "Head of Marketing"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "title": "The things we need to check when we want to buy a house",
+      "description" : "",
+      "thumb": "house-2__inside-2.jpg",
+      "length": 4,
+      "date": "25 Apr 2021",
+      "mod": "small",
+      "author": {
+        "avatar": "ava-3.jpg",
+        "name": "Dianne Russell"
+      }
+    },
+    {
+      "title": "7 Ways to distinguish the quality of the house we want to buy",
+      "description" : "",
+      "thumb": "house-10.jpg",
+      "length": 6,
+      "date": "24 Apr 2021",
+      "mod": "small",
+      "author": {
+        "avatar": "ava-9.jpg",
+        "name": "Courtney Henry"
+      }
+    },
+    {
+      "title": "The things we need to check when we want to buy a house",
+      "description" : "",
+      "thumb": "house-11.jpg",
+      "length": 2,
+      "date": "24 Apr 2021",
+      "mod": "small",
+      "author": {
+        "avatar": "ava-10.jpg",
+        "name": "Dianne Russell"
+      }
+    },
+    {
+      "title": "12 Things to know before buying a house",
+      "description" : "Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house",
+      "thumb": "house-12.jpg",
+      "length": 8,
+      "date": "25 Apr 2021",
+      "mod": "big",
+      "author": {
+        "avatar": "ava-11.jpg",
+        "name": "Cameron Williamson"
+      }
+    }
+  ]
+}

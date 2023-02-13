@@ -1,0 +1,40 @@
+section.featured#featured
+    .outline.featured__outline Our recommendation
+    header.featured__header
+        h2.h2.featured__h2 Featured house
+        .featured__controls
+            .featured__filter
+                button.btn.featured__btn.featured__btn--active(data-type="house")
+                    svg.featured__btn-icon
+                        use(href="img/sprite.svg#featured__house")
+                    .featured__btn-text House
+                button.btn.featured__btn(data-type="villa")
+                    svg.featured__btn-icon
+                        use(href="img/sprite.svg#featured__villa")
+                    .featured__btn-text Villa
+                button.btn.featured__btn(data-type="apartment")
+                    svg.featured__btn-icon
+                        use(href="img/sprite.svg#featured__apartment")
+                    .featured__btn-text Apartment
+            .featured__arrows
+                button.btn.featured__arrow
+                    svg.featured__arrow-icon
+                        use(href="img/sprite.svg#search__arrow--symbol")
+                button.btn.featured__arrow.featured__arrow--active
+                    svg.featured__arrow-icon
+                        use(href="img/sprite.svg#search__arrow--symbol")
+    ul.featured__list.swiper
+        .swiper-wrapper
+            each item in features
+                li.featured__item.swiper-slide(data-type=item.type)
+                    figure.featured__figure
+                        .featured__image-wrapper
+                            img.featured__image(src="img/"+item.img alt=item.name)
+                            small(class="featured__tag featured__tag--"+item.tag)
+                        figcaption.fiatured__caption
+                            h3.featured__item-name= item.name
+                            .featured__item-price= "$ " + item.price
+                            +user(item.owner.avatar, item.owner.name, item.owner.location, "mid")
+
+
+

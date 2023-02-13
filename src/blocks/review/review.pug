@@ -1,0 +1,15 @@
+section.review#review
+    .outline.outline--top.review__outline See our review
+    h2.h2.review__h2 What Our User Say About Us
+    .review__slider.swiper
+        .swiper-wrapper
+            each review in reviews
+                .review__slider-item.swiper-slide
+                    img.review__img(src="img/"+review.img alt="House picture")
+                    .review__content
+                        h3.review__content-title= review.title
+                        .review__content-text= review.text
+                        .review__content-info
+                            +user(review.person.avatar, review.person.name, review.person.post, "mid")
+                            .review__rate= review.rate
+        .review__pagination.swiper-pagination

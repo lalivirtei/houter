@@ -1,0 +1,7 @@
+mixin user(avatar, name, info, mod)
+    figure(class="user user--"+mod)
+        img.user__img(src="img/"+avatar alt="Photo of person")
+        figcaption.user__caption
+            .user__name= name
+            if info
+                .user__info= info

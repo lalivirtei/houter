@@ -1,0 +1,126 @@
+.footer {
+  padding: 0 15px 50px;
+
+  &__column {
+
+    &:first-child {
+      max-width: 320px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $screen-sm) {
+      flex: 1 1 min-content;
+      margin-right: 40px;
+
+      &:first-child {
+        max-width: unset;
+        flex: 1 1 100%;
+        margin-bottom: 60px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-right: 0;
+
+      &:first-child {
+        flex: 3.2 1 auto;
+        margin-bottom: 0;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        flex-grow: 0;
+      }
+
+    }
+  }
+
+  &__logo {
+    margin-bottom: 16px;
+  }
+
+  &__left-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--neutral-200);
+    margin-bottom: 24px;
+    max-width: 320px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-item {
+    display: block;
+    margin-right: 24px;
+    border-radius: 8px;
+    transition: transform .1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__social-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: var(--neutral-900);
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: var(--neutral-500);
+    border-radius: 8px;
+    transition: color .1s ease-in-out;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    &:hover {
+      color: var(--neutral-700);
+    }
+
+    @media (min-width: $screen-lg) {
+      white-space: nowrap;
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $screen-md) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
+  }
+
+}

@@ -1,0 +1,24 @@
+section.tour#tour
+    .tour__left
+        .tour__outline.outline Ready to sell!
+        h2.tour__h2.h2 Let’s tour and see our house!
+        .tour__undertitle Houses recommended by our partners that have been curated to become the home of your dreams!
+        .tour__detail
+            h3.tour__detail-heading House detail
+            .tour__detail-list
+                .tour__detail-item 4 Bedrooms
+                .tour__detail-item 2 Bathrooms
+                .tour__detail-item 1 Carport
+                .tour__detail-item 2 Floors
+        hr.tour__divider
+        .tour__contact
+            .tour__user
+                +user("ava-3.jpg", "Dianne Russell", "Manager Director", "big")
+            a.btn.btn--action.tour__call-button(href="tel:+123456" title="Call manager") Contact Now
+    .tour__right
+        .tour__video-holder.tour__fancy-video
+        figure.tour__images.swiper(role="group")
+            .tour__swiper-wrapper.swiper-wrapper
+                img.tour__img.swiper-slide(src="img/house-6__inside-1.jpg" alt="Interior photo" data-fancybox="tour" data-caption="House interior")
+                img.tour__img.swiper-slide(src="img/house-6__inside-2.jpg" alt="Interior photo" data-fancybox="tour" data-caption="House interior")
+                img.tour__img.swiper-slide(src="img/house-6__inside-3.jpg" alt="Interior photo" data-fancybox="tour" data-caption="House interior")

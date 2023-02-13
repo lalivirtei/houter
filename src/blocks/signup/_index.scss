@@ -1,0 +1,73 @@
+.signup {
+  display: flex;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: all ease-in-out .2s;
+  visibility: hidden;
+
+  &__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 50px;
+    border-radius: 32px;
+    font-size: 18px;
+    color: var(--white);
+    transform: translate(-50%, -50%);
+    background: rgb(34, 193, 195);
+    background: linear-gradient(145deg, var(--logo-orange) 0, var(--logo-green) 100%);
+    opacity: 0;
+    transition: all ease-in-out .2s;
+  }
+
+  &__input {
+    display: flex;
+    border-radius: 32px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    color: var(--neutral-700);
+    border: none;
+
+    &::placeholder {
+      color: var(--neutral-500);
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 25px;
+
+    &--close {
+      padding: 15px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 16px;
+      line-height: 1;
+      background: var(--green-100);
+      color: var(--green-500);
+      border: none;
+      border-radius: var(--radius);
+    }
+  }
+
+  &--open {
+    height: 100%;
+    visibility: visible;
+    backdrop-filter: blur(3px);
+
+    .signup__container {
+      opacity: 1;
+    }
+  }
+}

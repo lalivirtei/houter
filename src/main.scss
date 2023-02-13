@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;900&display=swap');
+@import "node_modules/normalize.css/normalize";
+@import "node_modules/select2/dist/css/select2.min";
+@import "node_modules/swiper/swiper-bundle";
+@import "node_modules/@fancyapps/ui/dist/fancybox";
+
+@import "common";
+
+@import "blocks/select2";
+@import "blocks/featured";
+@import "blocks/footer";
+@import "blocks/hero";
+@import "blocks/logo";
+@import "blocks/menu";
+@import "blocks/review";
+@import "blocks/search";
+@import "blocks/stats";
+@import "blocks/subscriber";
+@import "blocks/articles";
+@import "blocks/tour";
+@import "blocks/user";
+@import "blocks/signup";

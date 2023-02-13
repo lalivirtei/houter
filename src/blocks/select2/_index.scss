@@ -1,0 +1,108 @@
+.select2 {
+  transition: var(--transite-btn);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.select2-selection__rendered {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 24px 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--neutral-100);
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 16px;
+}
+
+.select2-container--default .select2-selection--single {
+  background: none;
+  border: none;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.selection {
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $screen-md) {
+    width: 122px;
+  }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: var(--neutral-100);
+  line-height: normal;
+}
+
+.select2-dropdown {
+  background: linear-gradient(173deg, rgba(124, 191, 224, 1) 22%, rgba(171, 206, 227, 1) 64%);
+  border: 1px solid hsla(0, 0%, 100%, .3);
+  border-radius: 32px;
+  padding: 5px 16px;
+  top: 5px;
+
+  @media (min-width: $screen-md) {
+    background: none;
+  }
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: 1px solid hsla(0, 0%, 100%, .3);
+  border-radius: 15px;
+  transition: all ease .3s;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  background: transparent url("./img/sprite.svg#shape-apis-view") 0 0 /11px 6px no-repeat;
+  border: none;
+  width: 11px;
+  height: 6px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: var(--neutral-100);
+}
+
+.select2-container .select2-selection--single {
+  height: unset;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+  overflow: hidden;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background: none;
+  color: var(--neutral-200) !important;
+  cursor: initial;
+
+  &:hover {
+    color: var(--neutral-200);
+  }
+}
+
+.select2-container--open .select2-dropdown {
+  left: 5px;
+}

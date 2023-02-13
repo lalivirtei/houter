@@ -1,0 +1,24 @@
+section.hero
+    .hero__container
+        .hero__left
+            .hero__logo
+                include ../logo/logo
+            h1.hero__header find the place to <br>live
+                span.hero__stroked &nbsp;your&nbsp;dreams<br>
+                |  easily here
+            .hero__under-title Everything you need about finding your place to live will be here, where it will be easier for you
+            include ../search/search
+            .hero__partners
+                .hero__partners-text Our partnership
+                ul.hero__partners-list
+                    li.hero__partners-item
+                        img.hero__partners-img(src="img/hero__traveloka.png" alt="traveloka")
+                    li.hero__partners-item
+                        img.hero__partners-img(src="img/hero__tiketcom.png" alt="tiket.com")
+                    li.hero__partners-item
+                        img.hero__partners-img(src="img/hero__airbnb.png" alt="airbnb")
+                    li.hero__partners-item
+                        img.hero__partners-img(src="img/hero__tripadvisor.png" alt="tripadvisor")
+        .hero__right#about
+            include ../menu/menu
+            include ../stats/stats

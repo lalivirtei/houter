@@ -1,0 +1,293 @@
+.tour {
+  padding: 0 15px;
+
+  &__left {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      padding-right: 15px;
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 40px;
+    }
+  }
+
+  &__right {
+    @media (min-width: $screen-md) {
+      width: 50%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: -28px;
+    }
+  }
+
+  &__outline {
+    margin-bottom: 12px;
+    @media (min-width: $screen-lg) {
+      margin-left: -40px;
+    }
+  }
+
+  &__h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__undertitle {
+    max-width: 413px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    color: var(--neutral-200);
+    opacity: var(--opacity-basic);
+  }
+
+  &__detail {
+    margin-bottom: 32px;
+    max-width: 413px;
+  }
+
+  &__detail-heading {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--headline);
+    opacity: var(--opacity-basic);
+  }
+
+  &__detail-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+
+  &__detail-item {
+    padding: 6px 6px 6px 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    color: var(--neutral-700);
+    background: center left /32px no-repeat;
+    text-transform: capitalize;
+
+    &:nth-child(1) {
+      background-image: url("img/sprite.svg#tour__bed");
+    }
+
+    &:nth-child(2) {
+      background-image: url("img/sprite.svg#tour__bath");
+    }
+
+    &:nth-child(3) {
+      background-image: url("img/sprite.svg#tour__park");
+    }
+
+    &:nth-child(4) {
+      background-image: url("img/sprite.svg#tour__stairs");
+    }
+
+    @media (min-width: $screen-sm) {
+      padding-left: 48px;
+      min-width: 150px;
+    }
+
+    @media (min-width: $screen-lg) {
+      min-width: 183px;
+    }
+  }
+
+  &__divider {
+    width: 90%;
+    max-width: 440px;
+    height: 2px;
+    background-color: var(--neutral-100);
+    border: none;
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__user {
+    margin-right: 60px;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 15px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-right: 58px;
+    }
+  }
+
+  &__call-button {
+    display: inline-block;
+    padding: 13px 16px 13px 56px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--green-500) url("img/sprite.svg#tour__phone") center left 18px/15px 19px no-repeat;
+
+    @media (min-width: $screen-md) {
+      padding-left: 55px;
+    }
+  }
+
+  &__video-holder {
+    height: 300px;
+    border-radius: 4px;
+    background-image: url("img/sprite.svg#tour__play"), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/house-6.jpg");
+    background-position: center, center, center;
+    background-size: 48px 48px, cover, cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-size ease .1s;
+    
+    &:hover {
+      background-size: 56px 56px, cover, cover;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 488px;
+      height: 416px;
+      margin: 0 auto -120px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 100%;
+      margin-bottom: -80px;
+      margin-right: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 488px;
+      margin-bottom: -125px;
+    }
+  }
+
+  &__images {
+    margin: 0;
+    position: relative;
+
+    @media (min-width: $screen-sm) {
+      left: 47%;
+      width: 508px;
+      overflow: visible;
+      transform: translateX(-50%);
+    }
+
+    @media (min-width: $screen-md) {
+      left: 15px;
+      width: 92%;
+      transform: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      left: -25px;
+    }
+
+    @media (min-width: $screen-xl) {
+      left: 39px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 70%;
+    max-width: 296px;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+    transition: filter ease .2s;
+
+    &:hover {
+      filter: contrast(150%);
+    }
+    
+    @media (min-width: $screen-sm) {
+      width: 96px;
+      height: 80px;
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      &:first-child {
+        width: 296px;
+        height: 168px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      width: unset;
+      flex: 1 1 25%;
+
+      &:first-child {
+        width: unset;
+        flex-basis: 50%;
+        height: 120px;
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      flex: 0 0 auto;
+      width: 96px;
+      height: 80px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        flex: 0 0 auto;
+        width: 296px;
+        height: 168px;
+      }
+    }
+  }
+
+  &__swiper-wrapper {
+    @media (min-width: $screen-sm) {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    @media (min-width: $screen-md) {
+      justify-content: space-around;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 114px;
+  }
+}

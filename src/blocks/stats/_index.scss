@@ -1,0 +1,91 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 23px;
+    background: #fff;
+    box-shadow: 0 11px 48px rgba(51, 51, 51, 0.06);
+    border-radius: 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-right: 17px;
+      flex-shrink: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  &__avatar {
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+
+    &:not(:last-child) {
+      margin-right: -28px;
+    }
+
+    &--squared {
+      width: 56px;
+      height: 56px;
+      border-radius: 24px;
+      border: none;
+    }
+  }
+
+  &__house-image {
+    border: none;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__undertitle {
+    font-size: 12px;
+    color: var(--text-subheadline);
+  }
+
+  @media (min-width: $screen-md) {
+    padding-left: 15px;
+  }
+
+  @media (min-width: $screen-lg) {
+    position: relative;
+    z-index: 1;
+    padding-left: 48px;
+  }
+
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    bottom: 48px;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}

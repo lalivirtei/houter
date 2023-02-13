@@ -1,0 +1,83 @@
+.subscriber {
+  box-sizing: border-box;
+  background: url("img/subscriber__bg.png") center center /cover no-repeat;
+  padding: 30px 15px;
+
+  &__title {
+    max-width: 430px;
+    margin: 0 auto 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--headline);
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__form {
+    max-width: 496px;
+    margin: 0 auto;
+    
+    @media (min-width: $screen-sm) {
+      position: relative;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 16px 16px 16px 55px;
+    border: none;
+    border-radius: 32px;
+    overflow: hidden;
+    background: #fff url("img/sprite.svg#subscriber__mail") left 25px center /20px 16px no-repeat;
+    margin-bottom: 15px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--neutral-500);
+    }
+
+    @media (min-width: $screen-sm) {
+      padding: 18px 145px 18px 55px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    @media (min-width: $screen-sm) {
+      position: absolute;
+      top: 50%;
+      right: 4px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__message {
+    font-size: 24px;
+    color: var(--green-700);
+    text-align: center;
+  }
+
+  @media (min-width: $screen-sm) {
+    padding: 74px 0 72px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 114px;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: 1200px;
+    min-height: 312px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+  }
+}

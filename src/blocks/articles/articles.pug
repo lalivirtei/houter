@@ -1,0 +1,19 @@
+section.articles#articles
+    .articles__outline.outline.outline--top See tips and trick from our partnership
+    h2.h2.articles__h2 Find out more about selling and buying homes
+    .articles__btn
+        a.btn.btn--action.articles__btn-link(href="./placeholder.html" target="_blank" title="Go to articles page") More Artikel
+    ul.articles__list
+        each item in articles
+            li(class="articles__item articles__item--"+item.mod)
+                a.articles__link(href="/placeholder.html" target="_blank" title="Read article")
+                    img.articles__item-image(src="img/"+item.thumb alt="Thumbnnail")
+                    .articles__item-content
+                        .articles__user
+                            +user(item.author.avatar, item.author.name, "", "small")
+                        h3.articles__title= item.title
+                        if item.description
+                            .articles__description= item.description
+                        .articles__info
+                            span.articles__info-estimate= item.length + " min read"
+                            span.articles__info-date= item.date

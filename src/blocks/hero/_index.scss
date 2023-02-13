@@ -1,0 +1,180 @@
+.hero {
+  overflow-x: hidden;
+
+  &__container {
+    @media (min-width: $screen-md) {
+      display: flex;
+    }
+
+    @media (min-width: $screen-xl) {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__logo {
+    @media (min-width: $screen-md) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__left {
+    padding: 15px;
+
+    @media (min-width: $screen-md) {
+      flex-basis: 50%;
+      padding-right: 5vw;
+      padding-top: 25px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 46px;
+      padding-bottom: 64px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 93px;
+    }
+  }
+
+  &__right {
+    padding: 35px 15px;
+    overflow: hidden;
+    background-image: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url("img/hero__bg.jpg");
+    background-size: cover;
+    background-position: center, top left;
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-md) {
+      padding-left: 0;
+      display: flex;
+      align-items: flex-end;
+      flex-basis: 50%;
+      border-radius: 0 0 0 80px;
+    }
+
+    @media (min-width: $screen-md) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 48px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-right: 0;
+      position: relative;
+      overflow: visible;
+      background: none;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        max-width: 985px;
+        height: 100%;
+        border-radius: 0 0 0 80px;
+        background-image: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url("img/hero__bg.jpg");
+        background-size: cover, cover;
+        background-position: center, top left;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__header {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -0.04em;
+
+    @media (min-width: $screen-sm) {
+      font-size: 40px;
+    }
+
+    @media (min-width: $screen-md) {
+      font-size: 32px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__stroked {
+    font-family: sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--headline);
+  }
+
+  &__under-title {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--neutral-200);
+    opacity: var(--opacity-basic);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+
+    @media (min-width: $screen-md) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 496px;
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__partners {
+    max-width: 427px;
+  }
+
+  &__partners-text {
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--neutral-500);
+  }
+
+  &__partners-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (min-width: $screen-sm) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+    }
+
+    @media (min-width: $screen-xl) {
+      grid-column-gap: 30px;
+    }
+  }
+
+  &__partners-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $screen-sm) {
+      justify-content: flex-start;
+    }
+  }
+}

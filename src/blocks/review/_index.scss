@@ -1,0 +1,113 @@
+.review {
+
+  &__outline {
+    margin-bottom: 11px;
+  }
+
+  &__h2 {
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 0;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slider {
+    padding-bottom: 47px;
+  }
+
+  &__slider-item {
+    width: 80%;
+    margin-bottom: 60px;
+    cursor: grab;
+
+    @media (min-width: $screen-md) {
+      max-width: 740px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    margin: 0 auto 15px;
+    height: 300px;
+    object-fit: cover;
+    opacity: var(--opacity-picture);
+    border-radius: 8px;
+
+    @media (min-width: $screen-md) {
+      height: 400px;
+    }
+  }
+
+  &__content {
+    box-sizing: border-box;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 9px 32px rgba(89, 92, 219, 0.05);
+
+    @media (min-width: $screen-sm) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 590px;
+      position: relative;
+      z-index: 1;
+      margin-top: -159px;
+      padding: 32px;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 612px;
+    }
+  }
+
+  &__content-title {
+    margin: 0 0 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: var(--headline);
+  }
+
+  &__content-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--neutral-200);
+    opacity: var(--opacity-basic);
+    margin-bottom: 22px;
+  }
+
+  &__content-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__rate {
+    padding-left: 46px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--neutral-700);
+    background: url("img/sprite.svg#review__star") left center /28px no-repeat;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 106px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: var(--neutral-300);
+
+  &-active {
+    background: var(--neutral-700);
+  }
+}
