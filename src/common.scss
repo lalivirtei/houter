@@ -40,11 +40,10 @@ $screen-xl: 1220px;
   font-family: Lexend, sans-serif;
   font-weight: 400;
   color: var(--headline);
-  background: url("img/sprite.svg#body__bg") left -100px top /cover no-repeat;
   min-width: 320px;
 
   @media (min-width: $screen-lg) {
-    background-position: center top;
+    background: url("img/sprite.svg#body__bg") center top /cover no-repeat;
   }
 
   &--no-scroll {

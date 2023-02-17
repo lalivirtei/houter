@@ -4,10 +4,14 @@ $(document).ready(function () {
     const $signup = $('.signup');
     let $signupContainer = $('.signup__container');
     let $body = $('.body');
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
 
     $('.btn--signup').click(function () {
         $signup.addClass('signup--open');
-        $body.addClass('body--no-scroll');
+
+        if (isMobile) {
+            $body.addClass('body--no-scroll');
+        }
 
         // why it won't work without timeout?
         setTimeout(function() {
@@ -17,25 +21,20 @@ $(document).ready(function () {
 
     $('.signup__button--close').click(function (e) {
         e.preventDefault();
-        hideModal();
+        $signup.removeClass('signup--open');
     });
 
     $(document).keyup(function(e) {
         if (e.key === 'Escape') {
-            hideModal();
+            $signup.removeClass('signup--open');
         }
     });
 
     $signup.click(function (e) {
         if (!$(e.target).closest('.signup__container').length) {
-            hideModal();
+            $signup.removeClass('signup--open');
         }
     });
-
-    function hideModal() {
-        $signup.removeClass('signup--open');
-        $body.removeClass('body--no-scroll');
-    }
 
     $signup.submit(function (e) {
         e.preventDefault();
@@ -52,15 +51,12 @@ $(document).ready(function () {
                     );
                 }
                 setTimeout(function () {
-                    hideModal();
+                    $signup.removeClass('signup--open');
                 }, 2000)
             },
             'json'
         )
     });
-
-
-
 
     // snippet to trap focus inside modal
 
