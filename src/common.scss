@@ -43,7 +43,8 @@ $screen-xl: 1220px;
   min-width: 320px;
 
   @media (min-width: $screen-lg) {
-    background: url("img/body__bg.svg") center top /cover no-repeat;
+    background: url("img/body__bg.svg") center top no-repeat;
+    background-size: cover;
   }
 
   &--no-scroll {
