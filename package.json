@@ -44,5 +44,18 @@
     "babel-plugin-module-resolver": "^5.0.0",
     "babel-plugin-root-import": "^6.6.0",
     "browser-sync": "^2.27.11"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
   }
 }

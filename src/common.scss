@@ -43,13 +43,15 @@ $screen-xl: 1220px;
   min-width: 320px;
 
   @media (min-width: $screen-lg) {
-    background: url("img/sprite.svg#body__bg") center top /cover no-repeat;
+    background: url("img/body__bg.svg") center top /cover no-repeat;
   }
 
   &--no-scroll {
     overflow: hidden;
   }
 }
+
+
 
 .h2 {
   margin-top: 5px;
