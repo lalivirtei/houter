@@ -96,7 +96,7 @@
     font-size: 20px;
     line-height: 28px;
     color: var(--neutral-700);
-    background: url("img/sprite.svg#review__star") left center /28px no-repeat;
+    background: url("img/sprite.svg#review__star") left center /28px 28px no-repeat;
   }
 
   @media (min-width: $screen-lg) {
