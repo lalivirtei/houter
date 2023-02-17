@@ -1,4 +1,19 @@
 {
+  "name": "houter",
+  "version": "1.0.1",
+  "description": "portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalivirtei/houter.git"
+  },
+  "keywords": [],
+  "author": "Denis Karakchiev",
+  "license": "ISC",
+  "homepage": "https://github.com/lalivirtei/houter#readme",
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
     "autoprefixer": "^10.4.13",
