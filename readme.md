@@ -3,7 +3,7 @@
 Субъективная сложность - средняя.
 
 ## Просмотр:
-[lalivirtei.github.io](lalivirtei.github.io)
+[lalivirtei.github.io](//lalivirtei.github.io)
 
 ## Установка
 1. `npm i` - Установка пакетов
