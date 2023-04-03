@@ -12,6 +12,7 @@
     border-radius: 32px;
     background: url("img/sprite.svg#search__map") center left 27px /18px 22px no-repeat;
     font-size: 14px;
+    transition: border-color ease-in-out .2s;
 
     &::placeholder {
       color: var(--neutral-500);
@@ -26,6 +27,11 @@
     @media (min-width: $screen-lg) {
       padding-left: 65px;
       background-position: center left 27px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--logo-orange);
     }
   }
 

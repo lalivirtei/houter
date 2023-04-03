@@ -52,10 +52,6 @@
   border-radius: 32px;
   padding: 5px 16px;
   top: 5px;
-
-  @media (min-width: $screen-md) {
-    background: none;
-  }
 }
 
 .select2-container--open .select2-dropdown--below {

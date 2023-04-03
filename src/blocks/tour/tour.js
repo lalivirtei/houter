@@ -1,21 +1,7 @@
 import $ from 'jquery';
-import Swiper, {Pagination} from 'swiper';
 import {Fancybox} from "@fancyapps/ui";
 
 $(document).ready(function () {
-    if (window.matchMedia('(max-width: 575px)').matches) {
-        new Swiper('.tour__images', {
-            modules: [Pagination],
-            pagination: {
-                el: '.tour__pagination',
-                clickable: true
-            },
-            spaceBetween: 30,
-            slidesPerView: "auto",
-            centeredSlides: true
-        })
-    }
-
     const $videoHolder = $('.tour__fancy-video');
 
     $videoHolder.click(function() {
